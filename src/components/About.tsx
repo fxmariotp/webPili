@@ -39,19 +39,20 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
                 overflow: 'hidden',
                 boxShadow: 'var(--shadow-md)',
                 border: '1px solid var(--border-color)',
-                backgroundColor: 'var(--bg-main)',
-                maxWidth: '520px',
+                backgroundColor: '#ffffff',
+                maxWidth: '460px',
+                aspectRatio: '4 / 5',
                 margin: '0 auto',
               }}
             >
               <img
-                src="/about-portrait.png"
-                alt="Pilar Vivas en su espacio de psicoterapia"
+                src="/pilar-vivas.jpg"
+                alt="Fotografía oficial de Pilar Vivas, Psicóloga General Sanitaria"
                 style={{
                   width: '100%',
-                  height: 'auto',
-                  maxHeight: '600px',
+                  height: '100%',
                   objectFit: 'cover',
+                  objectPosition: 'center 20%',
                   display: 'block',
                 }}
               />

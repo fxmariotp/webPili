@@ -138,23 +138,23 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 position: 'relative',
                 zIndex: 1,
                 width: '100%',
-                maxWidth: '520px',
-                height: 'auto',
+                maxWidth: '460px',
+                aspectRatio: '4 / 5',
                 borderRadius: 'var(--radius-lg)',
                 overflow: 'hidden',
                 boxShadow: 'var(--shadow-md)',
                 border: '1px solid var(--border-color)',
-                backgroundColor: 'var(--bg-surface)',
+                backgroundColor: '#ffffff',
               }}
             >
               <img
-                src="/hero-portrait.png"
-                alt="Retrato profesional de Pilar Vivas, Psicóloga General Sanitaria"
+                src="/pilar-vivas.jpg"
+                alt="Fotografía oficial de Pilar Vivas, Psicóloga General Sanitaria en Sevilla"
                 style={{
                   width: '100%',
                   height: '100%',
                   objectFit: 'cover',
-                  maxHeight: '620px',
+                  objectPosition: 'center 20%',
                   display: 'block',
                 }}
               />
