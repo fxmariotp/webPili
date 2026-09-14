@@ -49,9 +49,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 maxWidth: '570px',
               }}
             >
-              Un espacio humano, cálido y confidencial para comprender lo que sientes, 
-              trabajar en tu regulación emocional y avanzar hacia tu bienestar con herramientas 
-              adaptadas a tu situación particular.
+              A veces dar el paso de pedir ayuda no es fácil. Te acompaño a entender 
+              qué te está pasando, poner orden a lo que sientes y encontrar herramientas 
+              prácticas para tu día a día, a tu ritmo y sin juicios.
             </p>
 
             {/* CTAs */}
