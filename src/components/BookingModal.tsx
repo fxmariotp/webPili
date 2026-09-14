@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { X, Calendar, CheckCircle, Shield } from 'lucide-react';
 
 interface BookingModalProps {
@@ -99,10 +99,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                   marginBottom: '8px',
                 }}
               >
-                Inicia tu proceso de bienestar
+                Inicia tu proceso con Pilar Vivas
               </h3>
               <p style={{ fontSize: '0.9375rem', color: 'var(--text-secondary)' }}>
-                Rellena el siguiente formulario para solicitar disponibilidad. Recibirás una respuesta confidencial en menos de 24 horas laborables.
+                Rellena el siguiente formulario para solicitar disponibilidad. Recibirás respuesta confidencial de Pilar Vivas (Col. AN-13401) en breve.
               </p>
             </div>
 
@@ -195,7 +195,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                     color: 'var(--text-primary)',
                   }}
                 >
-                  <option value="presencial">Presencial en Madrid (Calle Velázquez)</option>
+                  <option value="presencial">Presencial en Sevilla</option>
                   <option value="online">Consulta Online (Videollamada segura)</option>
                   <option value="indiferente">Indiferente / Deseo consultar</option>
                 </select>

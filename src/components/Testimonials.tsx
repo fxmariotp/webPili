@@ -1,28 +1,27 @@
-import React from 'react';
 import { Quote } from 'lucide-react';
 
 export const Testimonials: React.FC = () => {
   const placeholders = [
     {
-      context: "Proceso de Terapia Individual (Ansiedad)",
+      context: "Regulación emocional y ansiedad",
       quote:
-        "«[Espacio reservado para testimonio real de paciente] — En este apartado se incorporarán testimonios anónimos de pacientes reales previa autorización expresa, respetando estrictamente el secreto profesional y la confidencialidad.»",
-      patient: "Paciente A.M.",
-      modalidad: "Sesiones presenciales en Madrid",
+        "«[Espacio reservado para testimonio real] — Aquí se incluirán testimonios anónimos de pacientes tras su autorización expresa, garantizando la estricta confidencialidad médica y profesional.»",
+      patient: "[Testimonio verificado]",
+      modalidad: "Consulta presencial en Sevilla",
     },
     {
-      context: "Acompañamiento en Transición Vital",
+      context: "Relaciones y enfoque sistémico",
       quote:
-        "«[Espacio reservado para testimonio real de paciente] — Experiencia enfocada en la claridad emocional, la construcción de límites y la adquisición de herramientas de regulación personal.»",
-      patient: "Paciente C.R.",
-      modalidad: "Consulta Online",
+        "«[Espacio reservado para testimonio real] — Valoraciones relativas al acompañamiento en momentos de dificultad familiar, relacional o personal.»",
+      patient: "[Testimonio verificado]",
+      modalidad: "Sesión Online",
     },
     {
-      context: "Gestión Emocional y Autoestima",
+      context: "Autoestima y conducta alimentaria",
       quote:
-        "«[Espacio reservado para testimonio real de paciente] — Valoraciones relativas al trato cercano, el rigor clínico y la sensación de seguridad transmitida durante todo el tratamiento.»",
-      patient: "Paciente M.S.",
-      modalidad: "Sesiones presenciales en Madrid",
+        "«[Espacio reservado para testimonio real] — Experiencias de pacientes durante el proceso terapéutico individualizado.»",
+      patient: "[Testimonio verificado]",
+      modalidad: "Consulta presencial en Sevilla",
     },
   ];
 

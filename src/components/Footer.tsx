@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
                 color: '#ffffff',
               }}
             >
-              Dra. Pilar
+              Pilar Vivas
             </span>
             <span
               style={{
@@ -44,14 +44,14 @@ export const Footer: React.FC = () => {
                 color: 'var(--accent-light)',
               }}
             >
-              Psicología Clínica & Psicoterapia
+              Psicóloga General Sanitaria
             </span>
             <p style={{ fontSize: '0.875rem', color: '#B0B8B3', lineHeight: 1.6, marginTop: '8px' }}>
-              Consulta privada de psicología sanitaria orientada al tratamiento individualizado de la ansiedad, el estrés y los procesos de cambio.
+              Consulta de psicología para adolescentes y adultos. Acompañamiento individualizado desde un enfoque integrador en Sevilla y formato Online.
             </p>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.8125rem', color: '#8E9992', marginTop: '4px' }}>
               <Shield size={14} color="var(--accent-light)" />
-              <span>Colegiada Nº M-38492 — Colegio Oficial de la Psicología</span>
+              <span>Colegiada AN-13401 — Colegio Oficial de Psicología</span>
             </div>
           </div>
 
@@ -105,22 +105,20 @@ export const Footer: React.FC = () => {
                 fontFamily: 'var(--font-sans)',
               }}
             >
-              Contacto y Ubicación
+              Contacto y Modalidad
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', fontSize: '0.875rem', color: '#B0B8B3' }}>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <MapPin size={18} color="var(--accent-light)" style={{ marginTop: '2px', flexShrink: 0 }} />
-                <span>Calle Velázquez, Madrid (Barrio de Salamanca) & Consulta Online</span>
+                <span>Consulta presencial en Sevilla & Sesiones Online</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <Mail size={18} color="var(--accent-light)" style={{ flexShrink: 0 }} />
-                <a href="mailto:consulta@drapilarpsicologia.es" style={{ color: '#B0B8B3' }}>
-                  consulta@drapilarpsicologia.es
-                </a>
+                <span>[Formulario de contacto disponible arriba]</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <Phone size={18} color="var(--accent-light)" style={{ flexShrink: 0 }} />
-                <span>+34 600 000 000</span>
+                <span>[Contacto previo requerimiento de cita]</span>
               </div>
             </div>
           </div>
@@ -209,7 +207,7 @@ export const Footer: React.FC = () => {
             color: '#8E9992',
           }}
         >
-          <p>© {currentYear} Dra. Pilar — Todos los derechos reservados.</p>
+          <p>© {currentYear} Pilar Vivas — Psicóloga General Sanitaria (Colegiada AN-13401). Todos los derechos reservados.</p>
           <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
             <a href="#aviso-legal" style={{ color: '#8E9992' }}>
               Aviso legal

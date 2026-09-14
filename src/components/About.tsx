@@ -1,4 +1,4 @@
-import { Award, CheckCircle2 } from 'lucide-react';
+import { Award, CheckCircle2, Layers } from 'lucide-react';
 
 interface AboutProps {
   onOpenBooking: () => void;
@@ -6,10 +6,17 @@ interface AboutProps {
 
 export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
   const credentials = [
-    'Psicóloga General Sanitaria — Colegiada Nº M-38492',
-    'Licenciada en Psicología por la Universidad Complutense de Madrid',
-    'Máster en Psicoterapia Integradora y Humanista',
-    'Formación continuada en Trauma, Apego y Regulación Emocional',
+    'Psicóloga General Sanitaria — Colegiada AN-13401',
+    'Grado en Psicología — Universidad de Huelva',
+    'Máster en Psicología General Sanitaria — Universidad Isabel I',
+    'Formación en Terapia Sistémica Familiar',
+    'Experiencia en Clínica Oryzon y centro especializado en Trastornos de la Conducta Alimentaria (TCA)',
+  ];
+
+  const approaches = [
+    { title: 'Herramientas Cognitivo-Conductuales', desc: 'Para identificar patrones de pensamiento y conducta que generan malestar.' },
+    { title: 'Enfoque Sistémico y Familiar', desc: 'Para comprender los vínculos, la comunicación y el contexto relacional.' },
+    { title: 'Terapias de Tercera Generación', desc: 'Para promover la aceptación, la flexibilidad cognitiva y la gestión emocional.' },
   ];
 
   return (
@@ -39,7 +46,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
             >
               <img
                 src="/about-portrait.png"
-                alt="Dra. Pilar en su espacio de psicoterapia"
+                alt="Pilar Vivas en su espacio de psicoterapia"
                 style={{
                   width: '100%',
                   height: 'auto',
@@ -55,7 +62,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
           <div>
             <div className="eyebrow">
               <span className="eyebrow-dot"></span>
-              <span>SOBRE MÍ Y MI FILOSOFÍA</span>
+              <span>SOBRE MÍ Y MI ENFOQUE</span>
             </div>
 
             <h2
@@ -68,7 +75,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
                 marginBottom: '24px',
               }}
             >
-              "Entiendo la psicoterapia como un diálogo humano, riguroso y sin juicios."
+              "Un enfoque integrador adaptado a tu historia y tus necesidades únicas."
             </h2>
 
             <p
@@ -79,8 +86,8 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
                 marginBottom: '20px',
               }}
             >
-              Hola, soy la Dra. Pilar. Llevo más de una década acompañando a personas en sus procesos de 
-              crecimiento emocional, resolución de conflictos internos y superación de la ansiedad.
+              Hola, soy <strong>Pilar Vivas</strong>, Psicóloga General Sanitaria (Colegiada AN-13401). 
+              Acompaño a adolescentes y adultos en consulta presencial en Sevilla y en modalidad online.
             </p>
 
             <p
@@ -88,13 +95,41 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
                 fontSize: '1.0625rem',
                 color: 'var(--text-secondary)',
                 lineHeight: 1.7,
+                marginBottom: '28px',
+              }}
+            >
+              Entiendo la psicoterapia como un proceso colaborativo y cercano donde no existen soluciones idénticas para personas distintas. 
+              Mi práctica profesional se fundamenta en un <strong>enfoque integrador</strong>, seleccionando las estrategias 
+              más adecuadas para cada caso sin perder nunca la calidez humana y el respeto por tus tiempos.
+            </p>
+
+            {/* Integrative Pillars */}
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                gap: '16px',
                 marginBottom: '32px',
               }}
             >
-              Mi enfoque combina el rigor de la psicología científica con una mirada cálida e individualizada. 
-              No creo en soluciones enlatadas ni en recetas genéricas: cada persona requiere un ritmo y una estructura propia 
-              para sentirse verdaderamente escuchada y sostenida.
-            </p>
+              {approaches.map((app, idx) => (
+                <div
+                  key={idx}
+                  style={{
+                    backgroundColor: 'var(--bg-main)',
+                    padding: '18px 20px',
+                    borderRadius: 'var(--radius-sm)',
+                    border: '1px solid var(--border-color)',
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
+                    <Layers size={16} color="var(--accent)" />
+                    <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--text-primary)' }}>{app.title}</span>
+                  </div>
+                  <p style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>{app.desc}</p>
+                </div>
+              ))}
+            </div>
 
             {/* Credentials Card */}
             <div
@@ -119,7 +154,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
                 }}
               >
                 <Award size={20} color="var(--accent)" />
-                <span>Acreditación Profesional & Titulación</span>
+                <span>Formación & Experiencia Profesional</span>
               </h3>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -138,7 +173,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
               className="btn btn-primary"
               style={{ padding: '14px 28px' }}
             >
-              <span>Conoce disponibilidad para primera sesión</span>
+              <span>Consultar disponibilidad para cita</span>
             </button>
           </div>
         </div>

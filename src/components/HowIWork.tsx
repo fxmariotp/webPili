@@ -1,27 +1,25 @@
-import React from 'react';
-
 export const HowIWork: React.FC = () => {
   const steps = [
     {
       number: '01',
-      title: 'Primera conversación',
-      subtitle: 'Toma de contacto y valoración inicial',
+      title: 'Nos conocemos',
+      subtitle: 'Primer contacto y consulta inicial',
       description:
-        'Conectamos para conocer brevemente tu situación, resolver cualquier duda inicial y valorar si mi forma de trabajar encaja con lo que estás buscando.',
+        'Un primer encuentro para hablar con tranquilidad sobre tu motivo de consulta, resolver tus dudas sobre la terapia y valorar la adaptación del proceso.',
     },
     {
       number: '02',
-      title: 'Comprender lo que necesitas',
-      subtitle: 'Evaluación y encuadre del proceso',
+      title: 'Entendemos qué necesitas',
+      subtitle: 'Exploración y encuadre compartido',
       description:
-        'En las primeras sesiones exploramos en profundidad tu historia, los factores que mantienen la dificultad y trazamos unos objetivos claros y realistas.',
+        'Dedicamos las primeras sesiones a comprender en profundidad tu situación, los factores que influyen en tu malestar y establecer juntos los objetivos del trabajo.',
     },
     {
       number: '03',
-      title: 'Trabajar hacia el cambio',
-      subtitle: 'Sesiones de tratamiento y consolidación',
+      title: 'Trabajamos hacia el cambio',
+      subtitle: 'Acompañamiento y herramientas',
       description:
-        'Desarrollamos herramientas prácticas y espacios de elaboración emocional en sesiones regulares, evaluando periódicamente tus progresos y tu bienestar.',
+        'Desarrollamos de forma colaborativa recursos prácticos e integradores en sesiones regulares, avanzando de forma sostenida y respetando siempre tus ritmos.',
     },
   ];
 

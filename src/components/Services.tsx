@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
 interface ServicesProps {
@@ -9,31 +8,38 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
   const servicesList = [
     {
       number: '01',
-      title: 'Psicoterapia Individual de Adultos',
-      tagline: 'Presencial y Online',
+      title: 'Ansiedad, estrés y regulación emocional',
+      tagline: 'Adolescentes y Adultos',
       description:
-        'Acompañamiento psicoterapéutico adaptado a tus necesidades particulares. Abordamos ansiedad, depresión, gestión emocional y dificultades relacionales desde un enfoque integrador.',
+        'Comprensión de los mecanismos de la ansiedad y el estrés. Trabajo enfocado en identificar desencadenantes y desarrollar estrategias prácticas de autorregulación emocional.',
     },
     {
       number: '02',
-      title: 'Gestión de Ansiedad y Estrés',
-      tagline: 'Estrategias de regulación emocional',
+      title: 'Autoestima y autoconocimiento',
+      tagline: 'Crecimiento personal',
       description:
-        'Identificación de los desencadenantes de la ansiedad y desarrollo de herramientas prácticas para autorregular el sistema nervioso y recuperar la serenidad en tu día a día.',
+        'Construcción de una relación más amable y compasiva contigo mismo/a, fortaleciendo la autovalía personal y clarificando tus valores y necesidades esenciales.',
     },
     {
       number: '03',
-      title: 'Autoestima y Desarrollo Personal',
-      tagline: 'Límites, identidad y autocomprensión',
+      title: 'Relaciones personales y familiares',
+      tagline: 'Perspectiva sistémica',
       description:
-        'Trabajamos en la construcción de una relación más amable y compasiva contigo mismo/a, aprendiendo a establecer límites saludables y fortalecer tu autovalía.',
+        'Abordaje de las dinámicas relacionales y vinculares, patrones de comunicación, resolución de conflictos y aprendizaje en la comunicación de límites saludables.',
     },
     {
       number: '04',
-      title: 'Duelo y Transiciones Vitales',
-      tagline: 'Acompañamiento en momentos de cambio',
+      title: 'Trastornos de la conducta alimentaria',
+      tagline: 'Atención especializada',
       description:
-        'Espacio respetuoso para procesar pérdidas, rupturas afectivas, cambios de etapa vital o momentos de incertidumbre laboral o personal.',
+        'Acompañamiento terapéutico orientado a comprender y sanar el malestar en la relación con la comida, la percepción de la imagen corporal y la vivencia emocional.',
+    },
+    {
+      number: '05',
+      title: 'Psicoterapia para adolescentes y adultos',
+      tagline: 'Proceso individualizado',
+      description:
+        'Espacio de escucha y trabajo terapéutico adaptado a los retos específicos de cada etapa del desarrollo vital en un entorno de máxima confidencialidad.',
     },
   ];
 

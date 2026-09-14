@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, Calendar } from 'lucide-react';
 
 interface NavbarProps {
@@ -65,7 +65,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
                 lineHeight: 1.1,
               }}
             >
-              Dra. Pilar
+              Pilar Vivas
             </span>
             <span
               style={{
@@ -78,7 +78,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
                 marginTop: '2px',
               }}
             >
-              Psicología & Psicoterapia
+              Psicóloga General Sanitaria
             </span>
           </a>
 
@@ -183,7 +183,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               <span>Pedir cita</span>
             </button>
             <p style={{ textAlign: 'center', fontSize: '0.8125rem', color: 'var(--text-muted)' }}>
-              Atención presencial en Madrid y consulta Online
+              Atención presencial en Sevilla y consulta Online
             </p>
           </div>
         </div>

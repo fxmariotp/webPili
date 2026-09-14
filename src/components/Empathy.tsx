@@ -1,31 +1,36 @@
-import React from 'react';
-import { Compass, Brain, Heart, RefreshCw } from 'lucide-react';
+import { Activity, ShieldAlert, Heart, Users, Compass } from 'lucide-react';
 
 export const Empathy: React.FC = () => {
   const situations = [
     {
-      icon: <Brain size={24} color="var(--accent)" />,
-      title: "Ansiedad y sobrepensamiento constante",
+      icon: <Activity size={24} color="var(--accent)" />,
+      title: "Ansiedad o estrés constante",
       description:
-        "Sientes la mente saturada por dudas, preocupación por el futuro o una tensión física que no desaparece aunque intentes descansar.",
+        "Sientes que la preocupación constante, la sobrecarga mental o la tensión física te impiden disfrutar con tranquilidad de tu día a día.",
     },
     {
-      icon: <RefreshCw size={24} color="var(--accent)" />,
-      title: "Sensación de estancamiento vital",
+      icon: <ShieldAlert size={24} color="var(--accent)" />,
+      title: "Dificultad en la regulación emocional",
       description:
-        "Notas que estás atrapado/a en patrones repetitivos, falta de claridad respecto a lo que deseas o dificultad para tomar decisiones importantes.",
+        "Experimentas emociones intensas o desbordantes que te resulta complicado gestionar, afectando a tu bienestar o a tus relaciones.",
     },
     {
       icon: <Heart size={24} color="var(--accent)" />,
-      title: "Desgaste emocional y alta exigencia",
+      title: "Inseguridad y baja autoestima",
       description:
-        "Priorizas siempre las necesidades ajenas, te cuesta poner límites o sientes un nivel de autoexigencia agotador en tu día a día.",
+        "Te notas desconectado/a de ti mismo/a, con elevados niveles de autoexigencia o dudas frecuentes sobre tu propia valía personal.",
+    },
+    {
+      icon: <Users size={24} color="var(--accent)" />,
+      title: "Conflictos en tus relaciones",
+      description:
+        "Atraviesas momentos complejos en el ámbito familiar, de pareja o personal, con dificultades para comunicar lo que necesitas o poner límites.",
     },
     {
       icon: <Compass size={24} color="var(--accent)" />,
-      title: "Transiciones o cambios difíciles",
+      title: "Preocupaciones sobre la conducta alimentaria",
       description:
-        "Enfrentas una ruptura, duelo, cambio profesional o momento de incertidumbre donde necesitas reordenar tus recursos internos.",
+        "Notas una relación conflictiva con la comida, la imagen corporal o patrones de alimentación que te generan malestar emocional.",
     },
   ];
 

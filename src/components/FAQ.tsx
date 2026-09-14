@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 interface FAQProps {
@@ -12,12 +12,12 @@ export const FAQ: React.FC<FAQProps> = ({ onOpenBooking }) => {
     {
       question: '¿Cómo es la primera sesión?',
       answer:
-        'La primera sesión es una toma de contacto tranquila y confidencial. Exploraremos los motivos por los que acudes a consulta, qué necesitas resolver y cómo me coordino para ayudarte. También es el momento idóneo para resolver cualquier duda sobre el proceso sin ningún tipo de compromiso.',
+        'La primera sesión es una toma de contacto tranquila y confidencial. Exploraremos los motivos por los que acudes a consulta, qué necesitas resolver y cómo organizamos el proceso. Es también el momento idóneo para resolver cualquier duda sin compromiso.',
     },
     {
-      question: '¿Las sesiones son online o presenciales?',
+      question: '¿Las sesiones son presenciales o online?',
       answer:
-        'Ofrezco ambas modalidades. Las sesiones presenciales se realizan en mi consulta privada en Madrid (zona céntrica y bien comunicada). Las sesiones online se llevan a cabo mediante videollamada cifrada de alta seguridad con la misma eficacia terapéutica.',
+        'Ofrezco ambas modalidades. Las sesiones presenciales se realizan en consulta privada en Sevilla. Las sesiones online se llevan a cabo mediante videollamada cifrada con la misma cercanía y rigor terapéutico.',
     },
     {
       question: '¿Cuánto dura una sesión?',

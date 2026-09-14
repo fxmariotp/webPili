@@ -1,5 +1,4 @@
-import React from 'react';
-import { ArrowRight, Calendar, ShieldCheck, MapPin } from 'lucide-react';
+import { ArrowRight, Calendar, ShieldCheck, MapPin, Users } from 'lucide-react';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -23,7 +22,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             {/* Eyebrow Label */}
             <div className="eyebrow">
               <span className="eyebrow-dot"></span>
-              <span>PSICOLOGÍA CLÍNICA Y PSICOTERAPIA SANITARIA</span>
+              <span>PILAR VIVAS — PSICÓLOGA GENERAL SANITARIA (COL. AN-13401)</span>
             </div>
 
             {/* Main Headline */}
@@ -37,7 +36,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 marginBottom: '24px',
               }}
             >
-              Un espacio seguro para comprender lo que sientes y avanzar con calma.
+              Psicoterapia individualizada para adolescentes y adultos en Sevilla y Online.
             </h1>
 
             {/* Subheading / Paragraph */}
@@ -50,9 +49,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 maxWidth: '570px',
               }}
             >
-              Acompañamiento terapéutico individualizado en Madrid y consulta Online. 
-              Un proceso respetuoso y confidencial, diseñado para ayudarte a clarificar tus emociones 
-              y recuperar el equilibrio a tu propio ritmo.
+              Un espacio humano, cálido y confidencial para comprender lo que sientes, 
+              trabajar en tu regulación emocional y avanzar hacia tu bienestar con herramientas 
+              adaptadas a tu situación particular.
             </p>
 
             {/* CTAs */}
@@ -97,11 +96,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
                 <ShieldCheck size={16} color="var(--accent)" />
-                <span>Colegiada Oficial Sanitaria</span>
+                <span>Colegiada AN-13401</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
                 <MapPin size={16} color="var(--accent)" />
-                <span>Presencial en Madrid & Online</span>
+                <span>Presencial en Sevilla & Online</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                <Users size={16} color="var(--accent)" />
+                <span>Adolescentes y Adultos</span>
               </div>
             </div>
           </div>
@@ -146,7 +149,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             >
               <img
                 src="/hero-portrait.png"
-                alt="Retrato profesional de la Dra. Pilar en su consulta privada"
+                alt="Retrato profesional de Pilar Vivas, Psicóloga General Sanitaria"
                 style={{
                   width: '100%',
                   height: '100%',
