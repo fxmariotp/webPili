@@ -15,9 +15,9 @@ export const FAQ: React.FC<FAQProps> = ({ onOpenBooking }) => {
         'La primera sesión es una toma de contacto tranquila y confidencial. Exploraremos los motivos por los que acudes a consulta, qué necesitas resolver y cómo organizamos el proceso. Es también el momento idóneo para resolver cualquier duda sin compromiso.',
     },
     {
-      question: '¿Las sesiones son presenciales o online?',
+      question: '¿Cómo funcionan las sesiones online?',
       answer:
-        'Ofrezco ambas modalidades. Las sesiones presenciales se realizan en consulta privada en Sevilla. Las sesiones online se llevan a cabo mediante videollamada cifrada con la misma cercanía y rigor terapéutico.',
+        'Las sesiones se realizan en modalidad 100% online a través de videollamada cifrada y segura. Te permite realizar la terapia desde tu propio espacio, con total privacidad, sin traslados ni pérdidas de tiempo, manteniendo exactamente la misma cercanía, calidez humana y rigor profesional.',
     },
     {
       question: '¿Cuánto dura una sesión?',
@@ -27,7 +27,7 @@ export const FAQ: React.FC<FAQProps> = ({ onOpenBooking }) => {
     {
       question: '¿Cuál es el precio?',
       answer:
-        'Las tarifas y condiciones de la consulta se informan detalladamente de forma previa a la reserva. Para consultar los honorarios actualizados de la sesión presencial u online, puedes solicitar información directa haciendo clic en "Pedir cita".',
+        'Las tarifas y condiciones de la consulta se informan detalladamente de forma previa a la reserva. Para consultar los honorarios actualizados de las sesiones online, puedes solicitar información directa haciendo clic en "Pedir cita".',
     },
     {
       question: '¿Con qué frecuencia se realizan las sesiones?',

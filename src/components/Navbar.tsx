@@ -183,7 +183,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               <span>Pedir cita</span>
             </button>
             <p style={{ textAlign: 'center', fontSize: '0.8125rem', color: 'var(--text-muted)' }}>
-              Atención presencial en Sevilla y consulta Online
+              Psicoterapia 100% Online
             </p>
           </div>
         </div>

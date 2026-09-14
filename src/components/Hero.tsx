@@ -1,4 +1,4 @@
-import { ArrowRight, Calendar, ShieldCheck, MapPin, Users } from 'lucide-react';
+import { ArrowRight, Calendar, ShieldCheck, Video, Users } from 'lucide-react';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -36,7 +36,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 marginBottom: '24px',
               }}
             >
-              Psicoterapia individualizada para adolescentes y adultos en Sevilla y Online.
+              Psicoterapia individualizada 100% Online para adolescentes y adultos.
             </h1>
 
             {/* Subheading / Paragraph */}
@@ -99,8 +99,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 <span>Colegiada AN-13401</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
-                <MapPin size={16} color="var(--accent)" />
-                <span>Presencial en Sevilla & Online</span>
+                <Video size={16} color="var(--accent)" />
+                <span>Sesiones 100% Online</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
                 <Users size={16} color="var(--accent)" />
@@ -149,7 +149,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             >
               <img
                 src="/pilar-vivas.jpg"
-                alt="Fotografía oficial de Pilar Vivas, Psicóloga General Sanitaria en Sevilla"
+                alt="Fotografía oficial de Pilar Vivas, Psicóloga General Sanitaria"
                 style={{
                   width: '100%',
                   height: '100%',

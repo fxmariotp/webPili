@@ -7,21 +7,21 @@ export const Testimonials: React.FC = () => {
       quote:
         "«[Espacio reservado para testimonio real] — Aquí se incluirán testimonios anónimos de pacientes tras su autorización expresa, garantizando la estricta confidencialidad médica y profesional.»",
       patient: "[Testimonio verificado]",
-      modalidad: "Consulta presencial en Sevilla",
+      modalidad: "Terapia Online",
     },
     {
       context: "Relaciones y enfoque sistémico",
       quote:
         "«[Espacio reservado para testimonio real] — Valoraciones relativas al acompañamiento en momentos de dificultad familiar, relacional o personal.»",
       patient: "[Testimonio verificado]",
-      modalidad: "Sesión Online",
+      modalidad: "Terapia Online",
     },
     {
       context: "Autoestima y conducta alimentaria",
       quote:
         "«[Espacio reservado para testimonio real] — Experiencias de pacientes durante el proceso terapéutico individualizado.»",
       patient: "[Testimonio verificado]",
-      modalidad: "Consulta presencial en Sevilla",
+      modalidad: "Terapia Online",
     },
   ];
 

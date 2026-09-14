@@ -88,7 +88,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
               }}
             >
               Hola, soy <strong>Pilar Vivas</strong>, Psicóloga General Sanitaria (Colegiada AN-13401). 
-              Acompaño a adolescentes y adultos en consulta presencial en Sevilla y en modalidad online.
+              Acompaño a adolescentes y adultos a través de sesiones online, con la máxima cercanía y rigor terapéutico.
             </p>
 
             <p

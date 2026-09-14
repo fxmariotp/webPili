@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { X, Calendar, CheckCircle, Shield } from 'lucide-react';
+import { X, Calendar, CheckCircle, Shield, Video } from 'lucide-react';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -12,7 +12,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
     nombre: '',
     email: '',
     telefono: '',
-    modalidad: 'presencial',
+    modalidad: 'online',
     mensaje: '',
   });
 
@@ -25,7 +25,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
 
   const handleReset = () => {
     setSubmitted(false);
-    setFormData({ nombre: '', email: '', telefono: '', modalidad: 'presencial', mensaje: '' });
+    setFormData({ nombre: '', email: '', telefono: '', modalidad: 'online', mensaje: '' });
     onClose();
   };
 
@@ -179,11 +179,9 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
 
               <div>
                 <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 600, marginBottom: '6px', color: 'var(--text-primary)' }}>
-                  Modalidad Preferida
+                  Modalidad de atención
                 </label>
-                <select
-                  value={formData.modalidad}
-                  onChange={(e) => setFormData({ ...formData, modalidad: e.target.value })}
+                <div
                   style={{
                     width: '100%',
                     padding: '12px 16px',
@@ -191,14 +189,15 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                     border: '1px solid var(--border-color)',
                     backgroundColor: 'var(--bg-surface)',
                     fontSize: '0.9375rem',
-                    fontFamily: 'var(--font-sans)',
                     color: 'var(--text-primary)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '10px',
                   }}
                 >
-                  <option value="presencial">Presencial en Sevilla</option>
-                  <option value="online">Consulta Online (Videollamada segura)</option>
-                  <option value="indiferente">Indiferente / Deseo consultar</option>
-                </select>
+                  <Video size={18} color="var(--accent)" />
+                  <span>Consulta 100% Online (Videollamada segura)</span>
+                </div>
               </div>
 
               <div>

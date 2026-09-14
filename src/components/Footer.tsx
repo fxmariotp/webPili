@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Shield, Share2, Globe } from 'lucide-react';
+import { Mail, Phone, Video, Shield, Share2, Globe } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
               Psicóloga General Sanitaria
             </span>
             <p style={{ fontSize: '0.875rem', color: '#B0B8B3', lineHeight: 1.6, marginTop: '8px' }}>
-              Consulta de psicología para adolescentes y adultos. Acompañamiento individualizado desde un enfoque integrador en Sevilla y formato Online.
+              Consulta de psicología para adolescentes y adultos. Acompañamiento individualizado desde un enfoque integrador en formato 100% Online.
             </p>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.8125rem', color: '#8E9992', marginTop: '4px' }}>
               <Shield size={14} color="var(--accent-light)" />
@@ -109,8 +109,8 @@ export const Footer: React.FC = () => {
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', fontSize: '0.875rem', color: '#B0B8B3' }}>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
-                <MapPin size={18} color="var(--accent-light)" style={{ marginTop: '2px', flexShrink: 0 }} />
-                <span>Consulta presencial en Sevilla & Sesiones Online</span>
+                <Video size={18} color="var(--accent-light)" style={{ marginTop: '2px', flexShrink: 0 }} />
+                <span>Sesiones 100% Online (Videollamada confidencial)</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <Mail size={18} color="var(--accent-light)" style={{ flexShrink: 0 }} />
