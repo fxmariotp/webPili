@@ -76,6 +76,7 @@ export const Footer: React.FC = () => {
                 { name: 'Sobre mí', href: '#sobre-mi' },
                 { name: 'Servicios', href: '#servicios' },
                 { name: 'Cómo trabajo', href: '#como-trabajo' },
+                { name: 'Opiniones', href: '#opiniones' },
                 { name: 'Preguntas frecuentes', href: '#faq' },
               ].map((item) => (
                 <li key={item.name}>
