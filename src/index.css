@@ -3,6 +3,23 @@
    Boutique Private Practice & Editorial Aesthetic
    ========================================================================== */
 
+/* Glacial Indifference (Tipografía de marca / Canva) */
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/fonts/GlacialIndifference-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/fonts/GlacialIndifference-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Color Palette - Warm, Calm, Editorial */
   --bg-main: #FAF8F5;
@@ -24,9 +41,9 @@
   --border-subtle: #ECE6DD;
   --border-focus: #486354;
 
-  /* Typography */
-  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Typography - Glacial Indifference */
+  --font-serif: 'Glacial Indifference', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Glacial Indifference', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   /* Spacing System */
   --section-padding-y: 110px;
@@ -75,8 +92,8 @@ body {
 /* Typography Utility Styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
-  font-weight: 500;
-  line-height: 1.15;
+  font-weight: 700;
+  line-height: 1.2;
   color: var(--text-primary);
   letter-spacing: -0.01em;
 }
@@ -147,7 +164,7 @@ img {
 .section-title {
   font-size: clamp(2.2rem, 4vw, 3.25rem);
   font-family: var(--font-serif);
-  font-weight: 500;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 20px;
   line-height: 1.2;
